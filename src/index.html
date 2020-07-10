@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>rgb</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">
+      <h4>IGTI</h4>
+      <p>Bootcamp Full Stack Developer <br> Módulo 1 - Cores RGB</p>
+    </div>
+
+    <div>
+      <div class="sec">
+        <label class="block" for="red-slider">&nbspR:</label>
+        <label class="block" for="green-slider">&nbspG:</label>
+        <label class="block" for="blue-slider">&nbspB:</label>
+      </div>
+      <div class="sec">
+        <input class="block" id="red-slider" type="range" min="0" max="255" value="0" onmousemove="getRedValue(this)">
+        <input class="block" id="green-slider" type="range" min="0" max="255" value="0"
+          onmousemove="getGreenValue(this)">
+        <input class="block" id="blue-slider" type="range" min="0" max="255" value="0" onmousemove="getBlueValue(this)">
+      </div>
+      <div class="sec">
+        <input class="block width" id="red-input" type="button" value="0">
+        <input class="block width" id="green-input" type="button" value="0">
+        <input class="block width" id="blue-input" type="button" value="0">
+      </div>
+    </div>
+    <div class="reset">
+      <button id="reset" class="button jump">Resetar</button>
+    </div>
+    <output id="hexVal">#000000</output>
+    <div id="backgroundColor"></div>
+  </div>
+
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>
